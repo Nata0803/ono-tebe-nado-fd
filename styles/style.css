@@ -19,10 +19,6 @@
   line-height: 100%;
 }
 
-.header__link_active {
-  text-decoration: none;
-}
-
 .header__links-list-item_no-bullit {
   list-style: none;
 }
@@ -50,9 +46,10 @@
 }
 
 .cover {
-  padding: 165px 0 50px;
-  background-image: url(../images/cover.jpg);
+  padding: 165px 50px 50px;
   position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
 }
 
 .overlay {
@@ -60,30 +57,73 @@
 }
 
 .cover__title {
+  padding-bottom: 106px;
   font-family: Raleway;
   font-weight: 700;
   font-style: Bold;
   font-size: 100px;
   line-height: 115%;
-  letter-spacing: 30%;
-  text-align: right;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  gap: 107px;
 }
 
 .cover__description-text {
   font-family: Raleway;
   font-weight: 400;
-  font-style: Regular;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 90%;
   text-transform: uppercase;
   color: #ffffff;
 }
 
+.bet-button {
+  border: 1px solid #ffffff;
+  padding: 12px 32px 11px 31px;
+  margin-left: auto;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+}
+
 .lots {
-  padding: 180px 0 120px;
+  padding: 180px 24px 120px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .card_type_film {
