@@ -36,17 +36,24 @@
     <main class="main">
       <section class="cover">
         <div class="overlay"></div>
-          <h1 class="cover__title">
-            <span class= "aligned-text aligned-text_left">он<span class="letter__spacing-none">о</span></span>
-            <span class="aligned-text aligned-text_center">теб<span class="letter__spacing-none">е</span></span>
-            <span class="aligned-text aligned-text_right">над<span class="letter__spacing-none">о</span></span>
-          </h1>
-          <div class="cover__description">
-            <p class="cover__description-text">
-              Аукцион вещей, в которые никто не верил
-            </p>
-            <button class="bet-button">Сделать ставку</button>
-          </div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_left"
+            >он<span class="letter__spacing-none">о</span></span
+          >
+          <span class="aligned-text aligned-text_center"
+            >теб<span class="letter__spacing-none">е</span></span
+          >
+          <span class="aligned-text aligned-text_right"
+            >над<span class="letter__spacing-none">о</span></span
+          >
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            <span class="word_spacing-max">Аукцион вещей,</span>
+            <span class="word_spacing-min">в которые никто не верил</span>
+          </p>
+          <button class="bet-button">Сделать ставку</button>
+        </div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
@@ -54,6 +61,7 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card card_type_film">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -68,6 +76,7 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card card_type_book">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -85,6 +94,7 @@
           <li class="lots__card-list-item">
             <a class="card-link" href="#">
               <article class="card card_type_picture">
+                <div class="overlay"></div>
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -101,12 +111,12 @@
         <span class="lots__look-more-link">посмотреть больше</span>
       </section>
       <section class="about">
-        <div class="about__column">
+        <!-- <div class="about__column"> -->
           <div class="about__logo">
             <img src="images/logo-white.svg" alt="" class="about__logo-image" />
           </div>
-        </div>
-        <div class="about__content">
+        <!-- </div> -->
+        <!-- <div class="about__column about__content"> -->
           <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
             <p>
@@ -126,7 +136,7 @@
               лоты стали культовыми.
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </section>
     </main>
     <footer class="footer">
@@ -151,7 +161,7 @@
       <ul class="footer__social-list">
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="images/yt.svg" alt="" class="footer__social-icon"/>
+            <img src="images/yt.svg" alt="" class="footer__social-icon" />
           </a>
         </li>
         <li class="footer__social-list-item">
@@ -161,7 +171,11 @@
         </li>
         <li class="footer__social-list-item">
           <a class="footer__social-link">
-            <img src="images/pinterest.svg" class="footer__social-icon" alt="">
+            <img
+              src="images/pinterest.svg"
+              class="footer__social-icon"
+              alt=""
+            />
           </a>
         </li>
       </ul>
