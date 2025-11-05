@@ -257,11 +257,12 @@
 }
 
 .about {
-  margin-bottom: 193px;
-  padding: 35px 0 0 16px;
+  margin-bottom: 180px;
+  padding: 36px 8px 0 28px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  column-gap: 25px;
+  row-gap: 8px;
   align-items: center;
 }
 
@@ -287,8 +288,10 @@
 }
 
 .about__title {
+  margin-top: 8px;
   grid-column-start: 2;
   grid-column-end: span 3;
+  text-align: left;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: Bold;
@@ -313,14 +316,19 @@
 }
 
 .footer {
-  padding-bottom: 82px;
+  padding: 0 50px 82px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  justify-items: center;
+}
+
+.footer__address {
+  justify-self: start;
+  max-width: 265px;
 }
 
 .footer__menu {
+  justify-self: center;
+  text-align: left;
   font-family: Raleway, sans-serif;
   font-weight: 400;
   font-style: Regular;
@@ -331,6 +339,9 @@
 }
 
 .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5px;
   list-style: none;
 }
 
@@ -344,6 +355,7 @@
 }
 
 .footer__social-list {
+  justify-self: end;
   display: flex;
   gap: 48px;
   list-style: none;
